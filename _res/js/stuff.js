@@ -6,3 +6,5 @@ function displayjoke() {
 }
 var joke  = document.getElementById('joke');
 joke.addEventListener ('click', displayjoke, true);
+
+// wee need more comments!
