@@ -1,0 +1,218 @@
+/* Author:		 	Manuel Hufmann 						*/
+/* Date: 			2010-05-18							*/
+/* Project: 		EFG: Persönliche Homepage erstellen	*/
+/* Version:			1.0	 								*/
+/* Change log:		1.0/mhu: initial version 			*/
+
+/* general definition */
+
+*{	
+	font-family:arial;
+}
+
+*, ::before, ::after { 
+	  box-sizing: inherit; 
+	}
+
+	html { 
+		  box-sizing: border-box; 
+		  background-color:#e3f2fd;
+		  height: 100%;
+		  position: relative;
+		} 
+		
+    body{
+		flex-flow:wrap;
+		margin:0px;
+		padding:0px;	
+	
+	}
+
+	
+/* default flex definition */	
+	header,
+	nav,
+	main,
+	article,
+	section,
+	aside,
+	footer{
+		flex:1 0 100%;
+		padding:1em;
+	}
+	
+/* header definition */	
+	
+	header{
+		background-color:#2196f3;
+	    display:flex;
+		flex-flow: row wrap;
+		color:#e3f2fd;		
+		width: 100%;
+
+	}
+	
+	header a img{
+      flex: 0 0 100px;
+      width: 75px;
+      margin-right: 15px;
+    }
+
+	
+/* navigation definition */		
+	nav{
+		background: #0d47a1;
+		width: 100%;
+		
+	}
+	nav ul{
+		display:flex;
+		flex-direction: row;
+		padding-top:0px;
+	}
+	
+	nav li{
+		list-style:none;
+		color:#e3f2fd;
+	}
+	
+	nav a{
+		flex-direction: row;
+		color:#e3f2fd;
+		text-decoration:none;
+		border-right:#e3f2fd solid 1px;
+		padding-left:1.5em;
+		padding-right:1.5em;
+	}
+	nav a:hover,
+	nav a:active{
+		font-weight:bold;
+	}
+	
+	nav a.active{
+		font-weight:bold;
+		
+	}
+		
+	#subnav{
+		background: #64b5f6;
+		padding-top:0.5px;
+		padding-bottom:0.01em;
+		margin-top:0em;
+		margin-bottom:0em;
+	}
+	
+	#subnav a{
+		border-style:none;
+	}
+	
+
+/* content defintion*/	
+	main{
+	 padding:2em;
+	 position:relative;
+	}
+	
+	article{
+		padding-top:0;
+	}
+	aside{
+		padding-top:0;
+	}
+	section{
+		padding-top:0;
+		padding-bottom:0.5em;
+	 }
+	
+	.italic{
+		font-style:italic;
+	
+	}
+	
+	.bold{
+		font-weight:bold;
+	}
+	
+	li.plain{
+		list-style:none;
+	}
+	
+	img.floatleftKF{
+		float:left;
+		width:10em;
+		margin-right:2em;
+
+	}
+	img.homergif{
+		padding-top:1em;
+		padding-bottom:1em;
+		width:25%;
+	}
+	img.winkilogo{
+		width:10em;
+	}
+	
+	img.profiljpg{
+		width:30em;
+	
+	}
+	td{
+		padding-right:4em;
+		text-align:left;
+		vertical-align:top;
+	}
+	
+	/* ">" inherits configuration to child */
+	tr.projects > td{
+		padding-bottom:1em;
+		border-top:1px solid black;
+	}
+	th{
+		text-align:left;	
+	}
+	/* define embededd videos size for auto scale */
+	.embed-video-wrapper {
+		width: 500px;
+		max-width: 100%;
+	}
+	.embed-container {
+		position: relative;
+		padding-bottom: 50%;
+		padding-top: 15px;
+		height: 0;
+		overflow: hidden;	
+	}
+	
+	.embed-container iframe,
+	.embed-container object,
+	.embed-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	
+/* footer definition */	
+	footer{
+		background-color:#2196f3;
+		text-align:center;
+		position: relatvie;
+		left: 0;
+		right: 0;
+		width: 100%;
+		bottom:0;
+
+	}
+	
+	footer p{
+		padding:0em;
+		margin:0em;
+		color:#e3f2fd;
+	}
+ 
+
+ 
+
+ 

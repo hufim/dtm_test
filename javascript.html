@@ -1,0 +1,67 @@
+﻿<!doctype html> 
+<html>
+
+	<!-- general definitions -->
+	<head  lang="de">
+		<meta charset="utf-8">
+		<meta name="author" content="Manuel Hufmann"/>
+		<meta name="description" content="Vorstellung/Steckbrief von Manuel Hufmann">
+		<meta name="keywords" content="Manuel, Hufmann, Vorstellung, Steckbrief, ITSE15b, TBZ, HF"> 
+		<meta name="date" content="2015-08-29"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home - JavaScript</title>	
+		<!-- style sheet definitions -->
+		<link rel="stylesheet" type="text/css" href="style.css" media="all">
+		
+	</head>
+	
+	<!-- site content -->
+		<body> 
+			<!-- header definitions; header will be displayed on top of the side -->
+			<header>
+				<a href="index.html"><img src="_res/img/logo.png" alt="logo"></a>
+				<h1>JavaScript</h1> 
+			</header> 
+			<!-- site navigation -->
+			<nav>
+					<a href="index.html" class="active">Home</a>
+					<a href="me.html">Das bin ich</a>
+					<a href="hobby.html">Freizeit</a>
+					<a href="work.html">Arbeit</a>
+			</nav>
+				<!-- sub navigation for sub sites -->
+				<nav id="subnav">
+					<ul>
+						<li><a href="JavaScript.html" class="active">JavaScript</a></li>
+						<li>></li>
+						<li><a href="phpexample.php" >PHP Beispiele</a></li>
+						</ul>
+				</nav>
+			<!-- main contains every article and section -->	
+			<main>
+
+				<!-- main content will be placed in the article-->
+				<article> 
+					<h1>JavaScript</h1>
+					<p>Nach einigem Hin und Her habe ich doch noch was kleines auf die Reihe gebracht. Resultat sehen Sie, wenn Sie auf den <mark>Knopf</mark> drücken:</p>
+						<button type="button" id="joke">Click me</button>
+				</article>
+				<!-- sub content will placed in sections -->
+				<!-- aside is used for a sub structur effect -->
+				<!--
+				<aside>
+					<section>
+					</section>
+				</aside>
+				-->
+				<!-- load JavaScript at the end, to aviod loading issues with the interactive content  -->
+				<script src="_res/js/stuff.js"></script>
+			</main>
+			
+			<!-- page footer -->
+			<footer>
+				<p>Manuel Hufmann 2015 ©</p>				
+			</footer>
+			
+		</body>
+</html>
